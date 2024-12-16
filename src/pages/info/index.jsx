@@ -55,7 +55,7 @@ export default function InfoPage() {
         </p>
 
         <p>
-          If you&apos;d like to work together, you can reach me at
+          If you&apos;d like to work together, you can reach me at{" "}
           <Link href="mailto:shareef.banjar@gmail.com">
             shareef.banjar@gmail.com
           </Link>
