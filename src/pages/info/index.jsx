@@ -5,28 +5,22 @@ import Link from "next/link";
 
 const experience = [
   {
-    company: "MoonPay",
-    role: "Senior Front-End Engineer",
+    company: "Marn",
+    role: "Front-End Engineer",
     date: "April 2022 → August 2024",
-    logo: "/moonpay-logo.jpg",
+    logo: "/marn-logo.jpg",
   },
   {
-    company: "Monzo",
-    role: "Web Engineer / Product Designer",
+    company: "R/GA",
+    role: "Software Engineer",
     date: "May 2019 → November 2021",
-    logo: "/monzo-logo.png",
+    logo: "/rga-logo.png",
   },
   {
-    company: "Kalo",
-    role: "UI Engineer",
+    company: "Proa",
+    role: "Front-End Engineer",
     date: "February 2017 → May 2019",
-    logo: "/kalo-logo.jpg",
-  },
-  {
-    company: "Pusher",
-    role: "Front-end Developer",
-    date: "September 2015 → January 2017",
-    logo: "/pusher-logo.jpg",
+    logo: "/proa-logo.jpg",
   },
 ];
 
@@ -36,34 +30,32 @@ export default function InfoPage() {
       <PageHeader title="Information" />
       <section className="pb-8 prose prose-lg">
         <p>
-          Hi there, I&apos;m Syarif. I build my own products, along side working
-          with some amazing companies to help them build theirs.
+          Hi, I&apos;m Syarif. I work with companies to design and build digital
+          products.
         </p>
         <p>
-          Most recently, I was working with R/GA to help build the future of
-          payments. Before that, I was working with Monzo - the fastest growing
-          bank in the UK. Originally joining as a product designer, I
-          transitioned into a web engineer role where I worked with a variety of
-          teams to help rethink modern day banking for their millions of
-          customers.
-        </p>
-
-        <p>
-          I also worked with Kalo (which eventually became Polywork) where I was
-          the first UI Engineering hire. My responsibilities included building
-          out the design system as well as ensuring a high bar of design quality
-          across the product.
+          Right now, I&apos;m working with Marn to build an employment solutions
+          platform, where I&apos;m responsible for developing the design system.
+          Before this, I worked at R/GA, building static web pages for the Grow
+          with Google program in the Google APAC region. I originally joined
+          R/GA as a Software Engineer and focused mostly on frontend
+          development.
         </p>
 
         <p>
-          I&apos;ve always bounced somewhere between design and engineering,
-          however the common thread has always been my love for building things
-          that people love to use.
+          I also took on a freelance project recently, building a mobile app
+          called Pawkit, which provides pet services like vet care and grooming
+          in Singapore.
         </p>
 
         <p>
-          If you&apos;re interested in working together, feel free to reach out
-          to me here:{" "}
+          In the past, I&apos;ve worked with Udacity as a Project Reviewer,
+          helping students improve their frontend development skills through
+          code reviews.
+        </p>
+
+        <p>
+          If you&apos;d like to work together, you can reach me at
           <Link href="mailto:shareef.banjar@gmail.com">
             shareef.banjar@gmail.com
           </Link>

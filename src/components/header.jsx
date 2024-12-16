@@ -13,12 +13,6 @@ export default function Header() {
         </a>
         <a
           className="text-950 text-sm tracking-tighter font-mono font-semibold"
-          href="/posts"
-        >
-          Writing
-        </a>
-        <a
-          className="text-950 text-sm tracking-tighter font-mono font-semibold"
           href="/contact"
         >
           Contact
