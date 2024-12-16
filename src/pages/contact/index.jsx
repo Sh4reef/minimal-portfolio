@@ -9,11 +9,6 @@ const contact = [
     label: "shareef.banjar@gmail.com",
   },
   {
-    method: "Twitter",
-    link: "https://twitter.com/sh4reef",
-    label: "@sh4reef",
-  },
-  {
     method: "GitHub",
     link: "https://github.com/sh4reef",
     label: "git/sh4reef",
