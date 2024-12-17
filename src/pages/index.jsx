@@ -46,7 +46,7 @@ export default function Home() {
             return (
               <a
                 class="flex flex-col justify-center bg-slate-100 hover:bg-slate-200/70 transition-colors rounded-xl p-8"
-                href="https://www.hystruct.com"
+                href={project.url}
               >
                 <div class="relative rounded-xl mb-4 shadow-project">
                   <Image
