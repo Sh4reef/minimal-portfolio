@@ -12,7 +12,7 @@ export default function Home() {
   ];
 
   return (
-    <main>
+    <main className="px-4 md:px-0">
       <section className="pb-14 border-b border-slate-300 mb-14">
         <h1 className="font-semibold text-4xl mb-4 text-slate-950">
           Hello, I’m Syarif.
