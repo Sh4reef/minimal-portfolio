@@ -7,20 +7,20 @@ const experience = [
   {
     company: "Marn",
     role: "Front-End Engineer",
-    date: "April 2022 → August 2024",
-    logo: "/marn-logo.jpg",
+    date: "Aug 2021 → Present",
+    logo: "/marn-logo.png",
   },
   {
     company: "R/GA",
     role: "Software Engineer",
-    date: "May 2019 → November 2021",
+    date: "Jan 2020 → Aug 2021",
     logo: "/rga-logo.png",
   },
   {
     company: "Proa",
     role: "Front-End Engineer",
-    date: "February 2017 → May 2019",
-    logo: "/proa-logo.jpg",
+    date: "Jun 2019 → Dec 2019",
+    logo: "/proa-logo.jpeg",
   },
 ];
 

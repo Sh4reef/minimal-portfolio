@@ -37,7 +37,25 @@ export default function App({ Component, pageProps }) {
         <meta
           property="og:site_name"
           content="Syarif Dairani - Software Engineer"
-        ></meta>
+        />
+        <meta property="og:image" content="https://syarifd.com/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Syarif Dairani - Software Engineer"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@sh4reef_py_old" />
+        <meta
+          name="twitter:title"
+          content="Syarif Dairani - Software Engineer"
+        />
+        <meta
+          name="twitter:description"
+          content="Syarif Dairani is a software engineer based in Bali, passionate about developing user interfaces for web and mobile."
+        />
+        <meta name="twitter:image" content="https://syarifd.com/og.png" />
       </Head>
       <div className={clsx(SaansFont.className, JetBrainsMonoFont.variable)}>
         <Header />
