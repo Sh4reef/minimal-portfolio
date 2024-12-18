@@ -7,7 +7,14 @@ export default function Home() {
       description:
         "Employement solutions platform, for businesses and job seekers.",
       url: "https://marn.io",
-      image: "https:/via.placeholder.com/450x240",
+      image: "/marn-project.png",
+    },
+    {
+      title: "Grow with Google",
+      description:
+        "It's Google initiative to help people get the skills they need to find a job.",
+      url: "https://grow.google",
+      image: "/gwg-project.png",
     },
   ];
 
@@ -36,7 +43,7 @@ export default function Home() {
       </section>
       <section class="pb-16">
         <h2 class="font-semibold text-2xl tracking-tight mb-4">
-          Personal Projects
+          Highlighted Projects
         </h2>
         <p class="text-slate-700 text-lg">
           Below is a selection of recent projects that I've worked on.
