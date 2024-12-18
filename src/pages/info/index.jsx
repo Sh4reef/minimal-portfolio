@@ -22,6 +22,12 @@ const experience = [
     date: "Jun 2019 → Dec 2019",
     logo: "/proa-logo.jpeg",
   },
+  {
+    company: "Udacity",
+    role: "Project Reviewer",
+    date: "Feb 2018 → Dec 2019",
+    logo: "/udacity-logo.png",
+  },
 ];
 
 export default function InfoPage() {
