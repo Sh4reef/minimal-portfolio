@@ -41,21 +41,21 @@ export default function Home() {
           </span>
         </a>
       </section>
-      <section class="pb-16">
-        <h2 class="font-semibold text-2xl tracking-tight mb-4">
+      <section className="pb-16">
+        <h2 className="font-semibold text-2xl tracking-tight mb-4">
           Highlighted Projects
         </h2>
-        <p class="text-slate-700 text-lg">
+        <p className="text-slate-700 text-lg">
           Below is a selection of recent projects that I've worked on.
         </p>
-        <div class="lg:w-[170%] lg:-ml-[35%] grid grid-cols-1 md:grid-cols-2 grid-flow-dense gap-8 mt-16">
+        <div className="lg:w-[170%] lg:-ml-[35%] grid grid-cols-1 md:grid-cols-2 grid-flow-dense gap-8 mt-16">
           {projects.map((project) => {
             return (
               <a
-                class="flex flex-col justify-center bg-slate-100 hover:bg-slate-200/70 transition-colors rounded-xl p-8"
+                className="flex flex-col justify-center bg-slate-100 hover:bg-slate-200/70 transition-colors rounded-xl p-8"
                 href={project.url}
               >
-                <div class="relative rounded-xl mb-4 shadow-project">
+                <div className="relative rounded-xl mb-4 shadow-project">
                   <Image
                     loading="lazy"
                     decoding="async"
@@ -66,10 +66,12 @@ export default function Home() {
                     src={project.image}
                   />
                 </div>
-                <h3 class="text-slate-700 font-semibold tracking-tight text-xl">
+                <h3 className="text-slate-700 font-semibold tracking-tight text-xl">
                   {project.title}
                 </h3>
-                <h3 class="text-slate-500 text-base">{project.description}</h3>
+                <h3 className="text-slate-500 text-base">
+                  {project.description}
+                </h3>
               </a>
             );
           })}

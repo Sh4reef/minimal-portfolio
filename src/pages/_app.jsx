@@ -5,6 +5,8 @@ import "@/styles/globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Head from "next/head";
+import { Provider } from "jotai";
+import { store } from "@/atoms";
 
 const SaansFont = localFont({
   src: "./saans-font.woff2",
@@ -58,9 +60,11 @@ export default function App({ Component, pageProps }) {
         <meta name="twitter:image" content="https://syarifd.com/og.png" />
       </Head>
       <div className={clsx(SaansFont.className, JetBrainsMonoFont.variable)}>
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
+        <Provider store={store}>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </Provider>
       </div>
     </>
   );
