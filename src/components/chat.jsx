@@ -1,12 +1,10 @@
-// ChatUI.js
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import ChatMessage from "./chat-message"; // Import the Message component
 import useChatData from "@/hooks/useChat";
-import { push, ref } from "firebase/database";
-import { database } from "@/firebaseConfig";
 import useAuth from "@/hooks/useAuth";
 import useIsAdmin from "@/hooks/useIsAdmin";
 import UsernameText from "./username-text";
+import axios from "axios";
 
 const Chat = ({ chatId }) => {
   const bottomEndRef = useRef();
@@ -35,12 +33,18 @@ const Chat = ({ chatId }) => {
   const handleSendMessage = async () => {
     if (input.trim() === "") return;
     try {
-      const chatMessagesRef = ref(database, `chats/${chatId}/messages`);
-      await push(chatMessagesRef, {
-        content: input,
-        sender: user.uid,
-        timestamp: new Date().getTime(),
-      });
+      const res = axios.post(
+        `/api/sendMessage?chatId=${chatId}`,
+        {
+          content: input,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${user.accessToken}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
     } catch (error) {
       console.log(error);
     }
