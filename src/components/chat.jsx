@@ -33,7 +33,7 @@ const Chat = ({ chatId }) => {
   const handleSendMessage = async () => {
     if (input.trim() === "") return;
     try {
-      const res = axios.post(
+      const res = await axios.post(
         `/api/sendMessage?chatId=${chatId}`,
         {
           content: input,
