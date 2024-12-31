@@ -28,8 +28,8 @@ if (!admin.apps.length) {
 
 const db = admin.database();
 
-const BOT_TOKEN = "7041633220:AAHvUaNK5bFOBTYU8-JAoa4B8dOx1HQPhk0"; // Replace with your bot token
-const CHAT_ID = "1561267066"; // Replace with your chat ID
+const BOT_TOKEN = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN;
+const CHAT_ID = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
 
 const sendMessage = async (text) => {
   try {
