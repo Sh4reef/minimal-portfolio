@@ -64,7 +64,7 @@ export default async function handler(req, res) {
       timestamp: new Date().getTime(),
     });
 
-    if (decodedToken.email !== "shareef.banjar@gmail.com") {
+    if (decodedToken.email !== "sh4r33f@icloud.com") {
       sendMessage(`You got a message from ${decodedToken.email}: ${content}`);
     }
 

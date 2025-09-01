@@ -16,8 +16,8 @@ export default function InfoPage() {
     () => [
       {
         method: "Email",
-        link: "mailto:shareef.banjar@gmail.com",
-        label: "shareef.banjar@gmail.com",
+        link: "mailto:sh4r33f@icloud.com",
+        label: "sh4r33f@icloud.com",
       },
       {
         method: "GitHub",
